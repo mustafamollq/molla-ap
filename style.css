@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #18181b;
+}
+
+/* ---------------------------Navbar----------------------- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 2rem 1rem;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1400px;
+  }
+  
+  .logo-img img {
+    height: 100px;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    padding: 0.7rem 1rem;
+    margin: 0 1rem;
+    position: relative;
+  }
+  
+  .navbar-links a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1e40af;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-links a:hover::after {
+    width: 100%;
+  }
+  
+  .navbar-button button {
+    color: #fff;
+    background-color: #1d4ed8;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  
+  .navbar-button button:hover {
+    background-color: #1e40af;
+  }
+
+/* -------------------------main ---------------------------- */
+
+.blur {
+  position: absolute;
+  box-shadow: 0 0 1000px 50px #1d4ed8;
+  z-index: -100;
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 6rem 15rem;
+}
+
+.main-left h3 {
+  color: #ccc;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.main-left h1 {
+  color: #fff;
+  max-width: 500px;
+  font-size: 2.8rem;
+}
+.main-left h1 span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.main-left p {
+  margin-top: 1rem;
+  color: #ccc;
+  font-size: 1rem;
+  max-width: 675px;
+}
+.main-left button {
+  color: #fff;
+  background-color: #1d4ed8;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.main-left button:hover {
+  background-color: #1e40af;
+}
+
+.header-img img {
+  height: 70%;
+  text-align: center;
+  position: relative;
+  bottom: 2.2rem;
+}
+
+
+/* -------------------------CARDS------------------------------- */
+.card-h1 {
+  grid-column: 1/5;
+  text-align: center;
+  position: relative;
+  bottom: 3rem;
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #fff;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem 15rem;
+}
+
+.card {
+  background-color: #27272a;
+  margin: 0 1rem;
+  border-radius: 9px;
+  padding: 3rem 2rem;
+  position: relative;
+  bottom: 2rem;
+  border: 1px solid transparent
+}
+
+.card span i {
+  font-size: 2rem;
+  background-color: #1e40af;
+  padding: 0.6rem;
+  border-radius: 7px;
+  position: relative;
+  bottom: 1.8rem;
+  color: #ccc;
+}
+
+.card h3 {
+  color: #fff;
+  position: relative;
+  bottom: 0.7rem;
+}
+.card p {
+  color: #ccc;
+  position: relative;
+  bottom: 0.5rem;
+}
+.card a {
+  color: #fff;
+  position: absolute;
+  bottom: 0.9rem;
+}
+
+.card:hover {
+  background-color: #323232;
+  border: 1px solid #fff;
+}
+
+/* ---------------------plans------------------- */
+
+.plans-section .plans-section-title{
+  margin: auto;
+  color: #fff;
+  text-align: center;
+}
+.plans-section h1 {
+  color: #fff;
+  margin-top: 10rem;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+.plans-section p {
+  color: #ccc;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 20rem;
+}
+
+.plan {
+  background-color: #27272a;
+  margin: 0 1.4rem;
+  margin-top: 4rem;
+  padding-top: 13rem;
+  border-radius: 10px;
+  border: 1px solid transparent
+ 
+}
+
+.plan h3 {
+  position: relative;
+  bottom: 9rem;
+  color: #fff;
+  left: 2rem;
+}
+.plan h2 {
+  position: relative;
+  bottom: 7rem;
+  left: 2.5rem;
+  border-bottom: 2px dashed white;
+  padding-bottom: 2rem;
+  max-width: 300px;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.plan p{
+ padding: .4rem;
+position: relative;
+left: 1rem;
+bottom: 5rem;
+}
+
+.plan button{
+    position: relative;
+    color: #ccc;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 1rem 7rem;    cursor: pointer;
+}
+
+.plan .btn1{
+position: relative;
+top: 6rem;
+left: 3rem;
+}
+.plan .btn2{
+    position: relative;
+    top: 3rem;
+    left: 3rem;
+}
+.plan .btn3{
+    position: relative;
+    bottom: 3rem;
+    left: 3rem;
+}
+
+.plan:hover{
+    background-color: #323232;
+    border: 1px solid #fff;
+}
+
+
+/* -------------------footer----------------- */
+
+.footers{
+    display: grid;
+    grid-template-columns: 400px repeat(3 ,1fr);
+    padding: 2rem 20rem;
+}
+.footer ul{
+    list-style: none;
+}
+.footer{
+    margin-top: 10rem;
+
+}
+
+.footer h2{
+    color: #fff;
+}
+.footer a{
+    color: #ccc; 
+}
+.footer li{
+    margin-top:1rem;
+}
+.footer p{
+    color: #ccc;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer a{
+    color: #ccc;
+}
+
+.footer img{
+    width: 100px;
+}
+
+.footer a i{
+   font-size: 1.2rem;
+   border-radius: 100%;
+   border: 1px solid #fff;
+   padding: .5rem;
+   margin: 1rem .5  rem
+  
+}
+
+@media (max-width:768px){
+    .navbar-links{
+        display: none;
+    }
+    .main{
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0;
+      
+    }
+    .main-left p {
+      margin-top: 1rem;
+      color: #ccc;
+      font-size: 1rem;
+      max-width: 400px;
+    }
+
+    .header-img img {
+      height: 40%;
+      text-align: center;
+      position: relative;
+      margin-top: 6rem;
+    }
+
+
+
+
+   .plans{
+    grid-template-columns: repeat(1 , 1fr);
+    padding: 0 ;
+   }
+   .plan .btn1{
+    margin-bottom: 9rem;
+    left: 5rem;
+    }
+   .plan .btn2{
+    margin-bottom: 6rem;
+    left: 5rem;
+    }
+    .plan .btn3{
+      margin-top: 9rem;
+      left: 5rem;
+      }
+
+
+    
+   .cards{
+    grid-template-columns: repeat(1 , 1fr);
+    padding: 1rem;
+    margin: 1rem ;
+   }
+   .card{
+    margin: 1rem 0;
+  
+   }
+   .card-h1 {
+    grid-column: 1/1;
+  }
+
+   .footers{
+    grid-template-columns: repeat(2 , 1fr);
+    padding: 0 3rem;
+   }
+   .footer{
+     padding: 0 3rem;
+   }
+    
+}
